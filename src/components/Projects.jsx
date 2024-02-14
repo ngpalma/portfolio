@@ -2,6 +2,8 @@ import rym from "../assets/App rick y morty captura.png";
 import countries from "../assets/Countries captura.png";
 import toolverse from "../assets/ToolVerse captura.png";
 import splendid from "../assets/Logo Splendid.jpg";
+import creando from "../assets/Creando....png";
+import petpal from "../assets/PetPal.png";
 
 function Projects() {
   return (
@@ -31,32 +33,20 @@ function Projects() {
         </div>
         <div className="lg:columns-4 sm:columns-2">
           <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
-            <h3 className="text-xl mb-5">PetPal</h3>
-            <img
-              className="rounded-md h-48 max-h-48 w-full"
-              src="https://rabiulislam.dev/documents/images/portfolio/sdr.jpg"
-            />
+            <h3 className="text-xl mb-5">PetPal - En curso</h3>
+            <img className="rounded-md h-48 max-h-48 w-full" src={petpal} />
           </div>
           <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
-            <h3 className="text-xl mb-5">PetPal</h3>
-            <img
-              className="rounded-md h-48 max-h-48 w-full"
-              src="https://rabiulislam.dev/documents/images/portfolio/sdr.jpg"
-            />
+            <h3 className="text-xl mb-5">Reservado</h3>
+            <img className="rounded-md h-48 max-h-48 w-full" src={creando} />
           </div>
           <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
-            <h3 className="text-xl mb-5">PetPal</h3>
-            <img
-              className="rounded-md h-48 max-h-48 w-full"
-              src="https://rabiulislam.dev/documents/images/portfolio/sdr.jpg"
-            />
+            <h3 className="text-xl mb-5">Reservado</h3>
+            <img className="rounded-md h-48 max-h-48 w-full" src={creando} />
           </div>
           <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
-            <h3 className="text-xl mb-5">PetPal</h3>
-            <img
-              className="rounded-md h-48 max-h-48 w-full"
-              src="https://rabiulislam.dev/documents/images/portfolio/sdr.jpg"
-            />
+            <h3 className="text-xl mb-5">Reservado</h3>
+            <img className="rounded-md h-48 max-h-48 w-full" src={creando} />
           </div>
         </div>
       </div>

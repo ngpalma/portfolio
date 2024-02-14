@@ -1,3 +1,5 @@
+import logo from "../assets/Logo.png"
+
 function NavBar() {
   return (
     <header>
@@ -22,7 +24,7 @@ function NavBar() {
           {/* <!-- images --> */}
           <img
             className="h-5"
-            src="https://rabiulislam.dev/documents/images/portfolio/portfolio.png"
+            src={logo}
           />
 
           {/* <!-- menu --> */}
