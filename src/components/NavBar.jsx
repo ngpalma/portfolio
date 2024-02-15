@@ -1,8 +1,6 @@
-import logo from "../assets/Logo.png"
-
 function NavBar() {
   return (
-    <header>
+    <header className="bg-gradient-to-r from-green-900 to-blue-900">
       <div className="container mx-auto">
         <nav className="sm:hidden pt-3 pb-2">
           <ul className="flex justify-center gap-10">
@@ -20,13 +18,7 @@ function NavBar() {
             </li>
           </ul>
         </nav>
-        <nav className="justify-between items-center h-10 p-10 hidden sm:flex">
-          {/* <!-- images --> */}
-          <img
-            className="h-5"
-            src={logo}
-          />
-
+        <nav className="justify-evenly items-center h-10 p-10 hidden sm:flex">
           {/* <!-- menu --> */}
           <ul className="flex gap-10">
             <li className="hover:text-gray-500">
@@ -45,7 +37,7 @@ function NavBar() {
 
           {/* <!-- auth --> */}
           <a
-            className="px-5 py-1 bg-gray-50 rounded-full ring-1 ring-gray-100 hover:bg-white"
+            className="animate-bounce px-5 py-1 bg-gray-50 rounded-full ring-1 ring-gray-100 hover:bg-white"
             href="#contact"
           >
             Contratame

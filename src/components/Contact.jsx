@@ -23,7 +23,10 @@ function Contact() {
   };
 
   return (
-    <section className="sm:p-20 p-5" id="contact">
+    <section
+      className="sm:p-20 p-5 bg-gradient-to-r from-green-900 to-blue-900"
+      id="contact"
+    >
       <div className="sm:container mx-auto">
         <h2 className="text-center text-4xl font-bold pb-10">Contacto</h2>
         <div className="w-full sm:flex">

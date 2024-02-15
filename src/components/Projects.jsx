@@ -7,7 +7,10 @@ import petpal from "../assets/PetPal.png";
 
 function Projects() {
   return (
-    <section className="lg:p-20 p-5" id="portfolio">
+    <section
+      className="lg:p-20 p-5 bg-gradient-to-r from-green-900 to-blue-900"
+      id="portfolio"
+    >
       <div className="lg:container mx-auto">
         <h2 className="text-center text-4xl font-bold pb-10">Proyectos</h2>
         <div className="lg:columns-4 sm:columns-2">

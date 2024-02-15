@@ -1,17 +1,12 @@
-import logo from "../assets/Logo.png"
-
+import logo from "../assets/Logo.png";
 
 function Footer() {
   return (
-    <footer className="bg-gray-50 lg:p-20 p-10">
+    <footer className="bg-gradient-to-r from-gray-900 to-black lg:p-20 p-10">
       <section className="container mx-auto">
         <div className="sm:grid justify-between sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex gap-5 flex-col">
-            <img
-              className="h-6 w-1/2"
-              src={logo}
-              alt="logo"
-            />
+            <img className="h-6 w-1/2" src={logo} alt="logo" />
             <p>Contactame para hacer realidad tus ideas</p>
           </div>
 
@@ -65,8 +60,6 @@ function Footer() {
               </li>
             </ul>
           </div>
-
-          
         </div>
       </section>
     </footer>

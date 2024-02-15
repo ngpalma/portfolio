@@ -1,14 +1,13 @@
 import photo from "../assets/Photo About.png";
 
-
 function Home() {
   return (
-    <section className="p-20">
+    <section className="p-20 bg-gradient-to-r from-green-900 to-blue-900">
       <div className="container mx-auto">
         <div className="flex justify-center">
           <div className="flex flex-col gap-5 text-center">
             <img
-              className="rounded-full bg-gray-50 h-66 w-56 mx-auto"
+              className="rounded-full h-66 w-56 mx-auto"
               src={photo}
             />
             <div className="flex flex-col gap-3">

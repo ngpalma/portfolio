@@ -1,6 +1,9 @@
 function Services() {
   return (
-    <section id="services" className="sm:p-10 lg:p-20 p-5">
+    <section
+      id="services"
+      className="sm:p-10 lg:p-20 p-5 bg-gradient-to-r from-green-900 to-blue-900"
+    >
       <div className="sm:container mx-auto">
         <h2 className="text-center text-4xl font-bold pt-10 sm:pt-0 pb-10">
           Servicios
