@@ -11,25 +11,35 @@ function Projects() {
       id="portfolio"
     >
       <div className="lg:container mx-auto">
-        <h2 className="text-center text-4xl font-extrabold pb-10 text-black">Proyectos</h2>
+        <h2 className="text-center text-4xl font-extrabold pb-10 text-black">
+          Proyectos
+        </h2>
         <div className="lg:columns-4 sm:columns-2">
           <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
-            <h3 className="text-xl mb-5">Rick & Morty</h3>
+            <h3 className="text-xl mb-5">
+              <a href="#">Rick & Morty</a>
+            </h3>
             <img className="rounded-md h-48 max-h-48 w-full" src={rym} />
           </div>
 
           <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
-            <h3 className="text-xl mb-5">Info Paises</h3>
+            <h3 className="text-xl mb-5">
+              <a href="#">Info Paises</a>
+            </h3>
             <img className="rounded-md h-48 max-h-48 w-full" src={countries} />
           </div>
 
           <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
-            <h3 className="text-xl mb-5">Tool Verse</h3>
+            <h3 className="text-xl mb-5">
+              <a href="#">Tool Verse</a>
+            </h3>
             <img className="rounded-md h-48 max-h-48 w-full" src={toolverse} />
           </div>
 
           <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
-            <h3 className="text-xl mb-5">spLENDid - En curso</h3>
+            <h3 className="text-xl mb-5">
+              <a href="#">spLENDid - En curso</a>
+            </h3>
             <img className="rounded-md h-48 max-h-48 w-full" src={splendid} />
           </div>
         </div>
