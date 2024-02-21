@@ -17,28 +17,28 @@ function Projects() {
         <div className="lg:columns-4 sm:columns-2">
           <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
             <h3 className="text-xl mb-5">
-              <a href="#">Rick & Morty</a>
+              <a href="https://github.com/ngpalma/rick_and_morty" target="_blank">Rick & Morty</a>
             </h3>
             <img className="rounded-md h-48 max-h-48 w-full" src={rym} />
           </div>
 
           <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
             <h3 className="text-xl mb-5">
-              <a href="#">Info Paises</a>
+              <a href="https://github.com/ngpalma/Countries" target="_blank">Info Paises</a>
             </h3>
             <img className="rounded-md h-48 max-h-48 w-full" src={countries} />
           </div>
 
           <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
             <h3 className="text-xl mb-5">
-              <a href="#">Tool Verse</a>
+              <a href="https://github.com/ngpalma/clientToolVerse" target="_blank">Tool Verse</a>
             </h3>
             <img className="rounded-md h-48 max-h-48 w-full" src={toolverse} />
           </div>
 
           <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
             <h3 className="text-xl mb-5">
-              <a href="https://github.com/ngpalma/client-spLENDid-app">spLENDid - En curso</a>
+              <a href="https://github.com/ngpalma/client-spLENDid-app" target="_blank">spLENDid - En curso</a>
             </h3>
             <img className="rounded-md h-48 max-h-48 w-full" src={splendid} />
           </div>
