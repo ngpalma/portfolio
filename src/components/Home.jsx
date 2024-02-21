@@ -2,7 +2,7 @@ import photo from "../assets/Photo About.png";
 
 function Home() {
   return (
-    <section className="p-20 bg-gradient-to-r from-green-900 to-blue-900">
+    <section className="p-20 bg-gradient-to-r from-green-800 to-blue-800">
       <div className="container mx-auto">
         <div className="flex justify-center">
           <div className="flex flex-col gap-5 text-center">
@@ -12,7 +12,7 @@ function Home() {
             />
             <div className="flex flex-col gap-3">
               <h1 className="font-bold text-6xl">Nicolás Palma</h1>
-              <p className="text-gray-500 text-sm">
+              <p className="text-white text-lg">
                 Desarrollador Web Full Stack (Javascript, React, PostgreSQL,
                 Node, Express)
               </p>

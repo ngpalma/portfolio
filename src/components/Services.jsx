@@ -2,10 +2,11 @@ function Services() {
   return (
     <section
       id="services"
-      className="sm:p-10 lg:p-20 p-5 bg-gradient-to-r from-green-900 to-blue-900"
+      className="sm:p-10 lg:p-20 p-5 bg-gradient-to-r from-green-800 to-blue-800"
     >
       <div className="sm:container mx-auto">
-        <h2 className="text-center text-4xl font-bold pt-10 sm:pt-0 pb-10">
+        <h2 className="text-center pt-10 sm:pt-0 pb-10 
+        text-black font-extrabold text-4xl mb-3">          
           Servicios
         </h2>
         <div className="sm:grid grid-cols-2">
@@ -13,7 +14,7 @@ function Services() {
             <h3 className="text-xl mb-5 font-bold">
               Desarrollo Web Personalizado y Completo
             </h3>
-            <p className="leading-10 text-gray-500 text-justify">
+            <p className="leading-10 text-gray-500 text-justify font-bold">
               Como profesional en desarrollo web, estoy comprometido a brindar
               soluciones completas y adaptadas a medida para satisfacer las
               diversas necesidades de mis clientes. Desde pequeñas empresas
@@ -27,7 +28,7 @@ function Services() {
             <h3 className="text-xl mb-5 font-bold">
               Diseño y Desarrollo Front-end y Back-end
             </h3>
-            <p className="leading-10 text-gray-500 text-justify">
+            <p className="leading-10 text-gray-500 text-justify font-bold">
               Con experiencia sólida en tecnologías front-end y back-end, me
               especializo en la creación de sitios web visualmente
               impresionantes y altamente funcionales. Desde la estructura y la
@@ -41,7 +42,7 @@ function Services() {
             <h3 className="text-xl mb-5 font-bold">
               Optimización para Móviles y SEO
             </h3>
-            <p className="leading-10 text-gray-500 text-justify">
+            <p className="leading-10 text-gray-500 text-justify font-bold">
               Entiendo la importancia de la accesibilidad y la visibilidad en
               línea. Por ello, todos los sitios web que desarrollo están
               completamente optimizados para dispositivos móviles y se
@@ -54,7 +55,7 @@ function Services() {
             <h3 className="text-xl mb-5 font-bold">
               E-commerce y Soluciones de Comercio Electrónico
             </h3>
-            <p className="leading-10 text-gray-500 text-justify">
+            <p className="leading-10 text-gray-500 text-justify font-bold">
               Si estás buscando expandir tu negocio en línea, puedo ayudarte a
               establecer una sólida presencia en el mercado digital con
               soluciones de comercio electrónico personalizadas. Desde la
@@ -68,7 +69,7 @@ function Services() {
             <h3 className="text-xl mb-5 font-bold">
               Mantenimiento y Soporte Continuo
             </h3>
-            <p className="leading-10 text-gray-500 text-justify">
+            <p className="leading-10 text-gray-500 text-justify font-bold">
               Mi compromiso no termina con la entrega del proyecto. Ofrezco
               servicios de mantenimiento y soporte continuo para garantizar que
               tu sitio web siga funcionando de manera óptima y se mantenga
@@ -81,7 +82,7 @@ function Services() {
             <h3 className="text-xl mb-5 font-bold">
               Consulta y Asesoramiento Personalizado
             </h3>
-            <p className="leading-10 text-gray-500 text-justify">
+            <p className="leading-10 text-gray-500 text-justify font-bold">
               Entiendo que cada proyecto es único y requiere un enfoque
               personalizado. Estoy aquí para escuchar tus necesidades, entender
               tus objetivos y ofrecerte la mejor solución posible que se adapte

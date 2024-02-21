@@ -2,18 +2,18 @@ function About() {
   return (
     <section
       id="about"
-      className="sm:p-10 lg:p-20 bg-gradient-to-r from-green-900 to-blue-900"
+      className="sm:p-10 lg:p-20 bg-gradient-to-r from-green-800 to-blue-800"
     >
       <div className="container mx-auto">
         <div className="sm:columns-1 text-center">
           <div>
-            <h2 className="text-bold text-2xl mb-3">
+            <h2 className="text-black font-extrabold text-4xl mb-3">
               Desarrollador Web Full Stack
             </h2>
-            <p className="mb-5 text-sm text-gray-400">
+            <p className="mb-5 text-xl text-gray-900 font-bold">
               Proporcionando soluciones web
             </p>
-            <p className="text-gray-500 text-center leading-10">
+            <p className="text-white font-bold text-center text-base leading-10">
               ¡Saludos! Soy un apasionado desarrollador web full stack con una
               dedicación inquebrantable hacia mi trabajo. Mi misión es convertir
               tus ideas y proyectos en experiencias digitales extraordinarias.
