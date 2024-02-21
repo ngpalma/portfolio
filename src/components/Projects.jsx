@@ -38,7 +38,7 @@ function Projects() {
 
           <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
             <h3 className="text-xl mb-5">
-              <a href="#">spLENDid - En curso</a>
+              <a href="https://github.com/ngpalma/client-spLENDid-app">spLENDid - En curso</a>
             </h3>
             <img className="rounded-md h-48 max-h-48 w-full" src={splendid} />
           </div>
