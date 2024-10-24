@@ -4,6 +4,7 @@ import toolverse from "../assets/ToolVerse captura.png";
 import splendid from "../assets/Logo Splendid.jpg";
 import creando from "../assets/Creando....png";
 import costura from "../assets/Web Costura.png";
+import imgTextil from "../assets/Img Textil.png";
 
 function Projects() {
   return (
@@ -48,7 +49,19 @@ function Projects() {
             </h3>
             <img className="rounded-md h-48 max-h-48 w-full" src={toolverse} />
           </div>
-
+          <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
+            <h3 className="text-xl mb-5">
+              <a
+                href="https://www.imgtextil.com.ar"
+                target="_blank"
+              >
+                Img Textil SRL
+              </a>
+            </h3>
+            <img className="rounded-md h-48 max-h-48 w-full" src={imgTextil} />
+          </div>
+        </div>
+        <div className="lg:columns-4 sm:columns-2">
           <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
             <h3 className="text-xl mb-5">
               <a
@@ -60,15 +73,9 @@ function Projects() {
             </h3>
             <img className="rounded-md h-48 max-h-48 w-full" src={splendid} />
           </div>
-        </div>
-        <div className="lg:columns-4 sm:columns-2">
           <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
             <h3 className="text-xl mb-5">Web costura - En desarrollo</h3>
             <img className="rounded-md h-48 max-h-48 w-full" src={costura} />
-          </div>
-          <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
-            <h3 className="text-xl mb-5">Reservado</h3>
-            <img className="rounded-md h-48 max-h-48 w-full" src={creando} />
           </div>
           <div className="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md">
             <h3 className="text-xl mb-5">Reservado</h3>
