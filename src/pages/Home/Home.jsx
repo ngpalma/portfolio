@@ -1,5 +1,5 @@
 import { Avatar, Container, Typography } from "@mui/material";
-import photo from "../../assets/Photo About.png";
+import photo from "../../../public/Photo About.png";
 import { Box } from "@mui/system";
 
 function Home() {
