@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Avatar, Button, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import logo from "../../../public/Mi Logo.png";
+import logo from "/Mi Logo.png";
 import Divider from "@mui/material/Divider";
 import { Box } from "@mui/system";
 import { NavLink } from "react-router-dom";
