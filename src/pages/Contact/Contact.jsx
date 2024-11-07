@@ -71,6 +71,7 @@ function Contact({ contactArray }) {
               startIcon={contact.icon}
               href={contact.url}
               target="_blank"
+              rel="noopener noreferrer"
               sx={{ mb: 2 }}
             >
               {contact.title}

@@ -9,7 +9,14 @@ import toolverse from "/ToolVerse captura.png";
 import splendid from "/Logo Splendid.jpg";
 import creando from "/Creando....png";
 import costura from "/Web Costura.png";
-import imgTextil from "/Img Textil.png";
+import imgTextilCatalogo from "/ImgTextilCatalogo.png";
+import imgTextilAbout from "/ImgTextilAbout.png";
+import imgTextilDestacado from "/ImgTextilDestacado.png";
+import imgTextilDrawer from "/ImgTextilDrawer.png";
+import imgTextilFooter from "/ImgTextilFooter.png";
+import imgTextilForm from "/ImgTextilForm.png";
+import imgTextilHome from "/ImgTextilHome.png";
+import imgTextilSegmentos from "/ImgTextilSegmentos.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -74,43 +81,61 @@ export const socialMedia = [
 
 export const projectsArray = [
   {
-    image: rym,
+    images: [rym],
+    video: "",
     title: "Rick & Morty",
     description:
       "Buscador de personajes de la famosa serie animada Rick & Morty. Al encontrar un personaje muestra su tarjeta con la imagen y descripción del mismo, permitiendo agregarlo a favoritos.",
-    detail: "",
+    detail:
+      "Este proyecto fue parte de mi aprendizaje como desarrollador web. A traves de los distintos módulos fui desarrollando cada etapa del mismo. Las tecnologías que utilicé son: Javascript, React-Redux, Node.js, Express.js, PostgreSQL-Sequelize, HTML5 y CSS3. Al mismo tiempo consumí la API de Rick & Morty para traer sus datos y guardarlos en la base de datos.",
     deploy: "",
     github: "",
   },
   {
-    image: countries,
+    images: [countries],
+    video: "",
     title: "Info Paises",
     description:
       "Página informativa sobre los distintos países, ver su bandera, cantidad de habitantes, superficie, etc. Se puede filtrar por continente y agregar actividades turisticas para realizar en una futura visita al mismo.",
-    detail: "",
+    detail:
+      "Como parte de un proyecto individual evaluatorio debí desarrollar una página web consumiendo datos de una API de países del mundo en la cual el usuario pudiera interactuar con los mismos y agregar sus actividades favoritas como turista. Utilicé tecnologías como: Javascript, Node y Express para el backend, React, Redux, HTML y CSS para el frontend y PostgreSQL con sequelize para la base de datos. En esta etapa mejoré mucho mi lógica de programación para el manejo de datos desde el backend y mi manejo de estilos CSS en el frontend, ademas de entender mucho mejor el manejo de estados con React y Redux.",
     deploy: "",
     github: "",
   },
   {
-    image: toolverse,
+    images: [toolverse],
+    video: "",
     title: "Tool Verse",
     description:
       "E-commerce de herramientas manuales y electricas para el hogar y la industria. Permite agregar al carrito y realizar una compra segura al estar registrado tanto de manera manual como a traves de Google.",
-    detail: "",
+    detail:
+      "Avanzando hacia la parte final de mi aprendizaje como desarrollador full stack enfocado en el PERN Stack, desarrollé junto a un equipo de estudiantes y compañeros un e-commerce de herramientas totalmente funcional con registro de usuarios, carrito de compras, stock de productos,  panel de administrador y de usuario, ordenes de compra, reviews de productos, pasarelas de pago como Mercado Pago y Paypal, persistencia de datos, etc. Aprendí a trabajar en equipo y a separar roles y tareas en Trello y a hacer pruebas con Postman. Mis tareas estuvieron enfocadas en parte en el backend para el armado de la estrutura de la base de datos y los modelos y la integración de Mercado Pago para las compras y en el frontend el dashboard del cliente y el deploy de la página utilizando Railway.",
     deploy: "",
     github: "",
   },
   {
-    image: imgTextil,
+    images: [
+      imgTextilCatalogo,
+      imgTextilAbout,
+      imgTextilDestacado,
+      imgTextilDrawer,
+      imgTextilFooter,
+      imgTextilForm,
+      imgTextilHome,
+      imgTextilSegmentos,
+    ],
+    video: "",
     title: "Img Textil S.R.L.",
     description:
       "Web corporativa de una empresa del rubro textil que incluye un catalogo completo con descripciones e imagenes de alta calidad. Sección de contacto. Filtros por segmento, modelo y género.",
-    detail: "",
-    deploy: "",
+    detail:
+      "Ahora si, enfocado en un proyecto real me embarque en un desafío junto con otro desarrollador para llevar a cabo una página web con tecnologías como Angular y Angular-Material para el frontend, Node y PostgreSQL para el backend y la base de datos. Nos enfocamos en el SEO de la página y utlizamos un servidor con linux (Ubuntu) para el despliegue del backend y la base de datos. Y un web hosting para el frontend. Fue una experiencia de mucho aprendizaje y quedamos más que conformes con el resultado, quedando abierta la posibilidad de ir escalando la web para que tenga más y mejores caracteristicas.",
+    deploy: "https://www.imgtextil.com.ar/home",
     github: "",
   },
   {
-    image: splendid,
+    images: [splendid],
+    video: "",
     title: "spLENDid - Desarrollo",
     description:
       "Aplicación Web pensada para permitir a la comunidad vender o alquilar aquello que no usan y asi sacar un redito diario, semanal o mensual, sin tener que preocuparse por roturas o perdidas.",
@@ -119,7 +144,8 @@ export const projectsArray = [
     github: "",
   },
   {
-    image: costura,
+    images: [costura],
+    video: "",
     title: "Costura - Desarrollo",
     description:
       "Landing Page para una costurera que desea mostrar su trabajo con una descripcion de los mismos, imágenes de alta calidad en modo presentación, redes sociales, sección de contacto y botón de WhastsApp",
@@ -128,7 +154,8 @@ export const projectsArray = [
     github: "",
   },
   {
-    image: creando,
+    images: [creando],
+    video: "",
     title: "Peluquería - Desarrollo",
     description:
       "Plataforma para peluquerías, barberías y estetica en general que permite registrarse a un usuario, seleccionar el servicio, reservar un turno y recibir una notificación de recordatorio del mismo.",

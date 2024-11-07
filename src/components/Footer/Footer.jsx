@@ -30,6 +30,7 @@ function Footer({ navLinksArray, socialMedia }) {
                 startIcon={social.icon}
                 href={social.link}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {social.title}
               </Button>
