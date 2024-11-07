@@ -77,7 +77,8 @@ export const projectsArray = [
     image: rym,
     title: "Rick & Morty",
     description:
-      "Lizards are a widespread group of squamate reptiles, with over                  6,000 species, ranging across all continents except Antarctica",
+      "Buscador de personajes de la famosa serie animada Rick & Morty. Al encontrar un personaje muestra su tarjeta con la imagen y descripción del mismo, permitiendo agregarlo a favoritos.",
+    detail: "",
     deploy: "",
     github: "",
   },
@@ -85,7 +86,8 @@ export const projectsArray = [
     image: countries,
     title: "Info Paises",
     description:
-      "Lizards are a widespread group of squamate reptiles, with over                  6,000 species, ranging across all continents except Antarctica",
+      "Página informativa sobre los distintos países, ver su bandera, cantidad de habitantes, superficie, etc. Se puede filtrar por continente y agregar actividades turisticas para realizar en una futura visita al mismo.",
+    detail: "",
     deploy: "",
     github: "",
   },
@@ -93,7 +95,8 @@ export const projectsArray = [
     image: toolverse,
     title: "Tool Verse",
     description:
-      "Lizards are a widespread group of squamate reptiles, with over                  6,000 species, ranging across all continents except Antarctica",
+      "E-commerce de herramientas manuales y electricas para el hogar y la industria. Permite agregar al carrito y realizar una compra segura al estar registrado tanto de manera manual como a traves de Google.",
+    detail: "",
     deploy: "",
     github: "",
   },
@@ -101,7 +104,8 @@ export const projectsArray = [
     image: imgTextil,
     title: "Img Textil S.R.L.",
     description:
-      "Lizards are a widespread group of squamate reptiles, with over                  6,000 species, ranging across all continents except Antarctica",
+      "Web corporativa de una empresa del rubro textil que incluye un catalogo completo con descripciones e imagenes de alta calidad. Sección de contacto. Filtros por segmento, modelo y género.",
+    detail: "",
     deploy: "",
     github: "",
   },
@@ -109,7 +113,8 @@ export const projectsArray = [
     image: splendid,
     title: "spLENDid - Desarrollo",
     description:
-      "Lizards are a widespread group of squamate reptiles, with over                  6,000 species, ranging across all continents except Antarctica",
+      "Aplicación Web pensada para permitir a la comunidad vender o alquilar aquello que no usan y asi sacar un redito diario, semanal o mensual, sin tener que preocuparse por roturas o perdidas.",
+    detail: "",
     deploy: "",
     github: "",
   },
@@ -117,7 +122,8 @@ export const projectsArray = [
     image: costura,
     title: "Costura - Desarrollo",
     description:
-      "Lizards are a widespread group of squamate reptiles, with over                  6,000 species, ranging across all continents except Antarctica",
+      "Landing Page para una costurera que desea mostrar su trabajo con una descripcion de los mismos, imágenes de alta calidad en modo presentación, redes sociales, sección de contacto y botón de WhastsApp",
+    detail: "",
     deploy: "",
     github: "",
   },
@@ -125,7 +131,8 @@ export const projectsArray = [
     image: creando,
     title: "Peluquería - Desarrollo",
     description:
-      "Lizards are a widespread group of squamate reptiles, with over                  6,000 species, ranging across all continents except Antarctica",
+      "Plataforma para peluquerías, barberías y estetica en general que permite registrarse a un usuario, seleccionar el servicio, reservar un turno y recibir una notificación de recordatorio del mismo.",
+    detail: "",
     deploy: "",
     github: "",
   },

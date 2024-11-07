@@ -1,16 +1,14 @@
 /* eslint-disable react/prop-types */
-import {
-  AppBar,
-  Button,
-  Drawer,
-  IconButton,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import AppBar from "@mui/material/AppBar";
+import Button from "@mui/material/Button";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
-import NavListDrawer from "./NavListDrawer";
+import { NavListDrawer } from "../index";
 import { useState } from "react";
-import { Box } from "@mui/system";
+import Box from "@mui/system/Box";
 import { NavLink } from "react-router-dom";
 
 function NavBar({ navLinksArray }) {
@@ -53,7 +51,11 @@ function NavBar({ navLinksArray }) {
         onClose={() => setOpen(false)}
         sx={{ display: { xs: "flex", sm: "flex", md: "none" } }}
       >
-        <NavListDrawer navLinksArray={navLinksArray} NavLink={NavLink} setOpen={setOpen}/>
+        <NavListDrawer
+          navLinksArray={navLinksArray}
+          NavLink={NavLink}
+          setOpen={setOpen}
+        />
       </Drawer>
     </>
   );

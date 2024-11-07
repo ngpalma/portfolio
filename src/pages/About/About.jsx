@@ -1,6 +1,7 @@
-import { Container, Typography } from "@mui/material";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
-import { Box } from "@mui/system";
+import Box from "@mui/system/Box";
 
 function About() {
   return (

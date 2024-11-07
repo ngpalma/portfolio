@@ -1,12 +1,10 @@
 /* eslint-disable react/prop-types */
-import {
-  Card,
-  CardActionArea,
-  CardContent,
-  CardMedia,
-  Container,
-  Typography,
-} from "@mui/material";
+import Card from "@mui/material/Card";
+import CardActionArea from "@mui/material/CardActionArea";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
 
 function Projects({ projectsArray }) {

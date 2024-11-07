@@ -1,6 +1,8 @@
-import { Avatar, Container, Typography } from "@mui/material";
+import Avatar from "@mui/material/Avatar";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 import photo from "/Photo About.png";
-import { Box } from "@mui/system";
+import Box from "@mui/system/Box";
 
 function Home() {
   return (

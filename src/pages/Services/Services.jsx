@@ -1,5 +1,9 @@
 /* eslint-disable react/prop-types */
-import { Card, CardContent, Container, Paper, Typography } from "@mui/material";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Container from "@mui/material/Container";
+import Paper from "@mui/material/Paper";
+import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
 
 function Services({ servicesArray }) {

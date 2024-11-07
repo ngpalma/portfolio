@@ -1,21 +1,18 @@
 /* eslint-disable react/prop-types */
-// import { useState } from "react";
 import emailjs from "@emailjs/browser";
-
-import { Button, Container, TextField, Typography } from "@mui/material";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
-
-import { Box } from "@mui/system";
+import Box from "@mui/system/Box";
 import SendIcon from "@mui/icons-material/Send";
 import { useRef, useState } from "react";
 
 const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
 
 function Contact({ contactArray }) {
-  // const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  // const [subject, setSubject] = useState("");
-  // const [text, setText] = useState("");
   const [error, setError] = useState({
     error: false,
     message: "",
@@ -43,7 +40,6 @@ function Contact({ contactArray }) {
       });
       return alert(error.message);
     }
-
     emailjs
       .sendForm(VITE_SERVICE_ID, VITE_TEMPLATE_ID, form.current, {
         publicKey: VITE_PUBLIC_KEY,
@@ -102,10 +98,6 @@ function Contact({ contactArray }) {
               type="text"
               variant="outlined"
               sx={{ mb: 2 }}
-              // helperText={error.message}
-              // error={error.error}
-              // value={name}
-              // onChange={(e) => setName(e.target.value)}
             />
             <TextField
               fullWidth
@@ -130,10 +122,6 @@ function Contact({ contactArray }) {
               type="text"
               variant="outlined"
               sx={{ mb: 2 }}
-              // helperText={error.message}
-              // error={error.error}
-              // value={subject}
-              // onChange={(e) => setSubject(e.target.value)}
             />
             <TextField
               fullWidth
@@ -145,10 +133,6 @@ function Contact({ contactArray }) {
               multiline
               rows={4}
               variant="outlined"
-              // helperText={error.message}
-              // error={error.error}
-              // value={text}
-              // onChange={(e) => setText(e.target.value)}
             />
 
             <Button
