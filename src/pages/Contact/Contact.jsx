@@ -12,7 +12,10 @@ import { useRef, useState } from "react";
 const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
 
 function Contact({ contactArray }) {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
   const [error, setError] = useState({
     error: false,
     message: "",
@@ -32,11 +35,11 @@ function Contact({ contactArray }) {
         error: false,
         message: "",
       });
-      console.log("Email correcto");
+      console.log("Email correcto.");
     } else {
       setError({
         error: true,
-        message: "Formato de email incorrecto",
+        message: "Formato de email incorrecto.",
       });
       return alert(error.message);
     }
@@ -46,7 +49,11 @@ function Contact({ contactArray }) {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          alert("Mensaje enviado correctamente.");
+          setName("");
+          setEmail("");
+          setSubject("");
+          setMessage("");
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -99,6 +106,8 @@ function Contact({ contactArray }) {
               type="text"
               variant="outlined"
               sx={{ mb: 2 }}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
             <TextField
               fullWidth
@@ -123,6 +132,8 @@ function Contact({ contactArray }) {
               type="text"
               variant="outlined"
               sx={{ mb: 2 }}
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
             />
             <TextField
               fullWidth
@@ -134,6 +145,8 @@ function Contact({ contactArray }) {
               multiline
               rows={4}
               variant="outlined"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             />
 
             <Button
