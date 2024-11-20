@@ -1,25 +1,36 @@
 /* eslint-disable react/prop-types */
-import Avatar from "@mui/material/Avatar";
+// import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
-import logo from "/Mi Logo.png";
-import Divider from "@mui/material/Divider";
+import logo from "/LogoNGdev.svg";
 import Box from "@mui/system/Box";
 import { NavLink } from "react-router-dom";
 
 function Footer({ navLinksArray, socialMedia }) {
   return (
     <footer>
-      <Divider />
-      <Box sx={{ flexGrow: 1 }}>
+      <Box
+        sx={{
+          flexGrow: 1,
+          backgroundColor: "#333333",
+          color: "#FFFFFF",
+          py: 4,
+        }}
+      >
         <Grid container spacing={2} textAlign={"center"} alignItems={"center"}>
           <Grid size={4} justifyItems={"center"}>
-            <Box>
-              <Avatar
-                alt="Mi Logo"
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <img
                 src={logo}
-                sx={{ width: 200, height: 200 }}
+                alt="Mi logo"
+                style={{ width: 100, height: 100 }}
               />
             </Box>
           </Grid>
@@ -31,6 +42,7 @@ function Footer({ navLinksArray, socialMedia }) {
                 href={social.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                sx={{ color: "secondary.light" }}
               >
                 {social.title}
               </Button>
@@ -43,17 +55,16 @@ function Footer({ navLinksArray, socialMedia }) {
                 component={NavLink}
                 startIcon={link.icon}
                 to={link.path}
+                sx={{ color: "primary.light" }}
               >
                 {link.title}
               </Button>
             ))}
           </Grid>
           <Grid size={12}>
-            <Box sx={{ mb: 2 }}>
-              <Typography>
-                &copy; {new Date().getFullYear()} Nicolás Palma - Mi Portfolio
-              </Typography>
-            </Box>
+            <Typography>
+              &copy; {new Date().getFullYear()} Nicolás Palma - Mi Portfolio
+            </Typography>
           </Grid>
         </Grid>
       </Box>

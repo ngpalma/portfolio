@@ -1,31 +1,28 @@
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
-import Box from "@mui/system/Box";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import diploma from "/DiplomaHenry.png";
+import { Button } from "@mui/material";
 
 function About() {
   return (
-    <Container
-      sx={{ justifyItems: "center", textAlign: "center", mt: 2, mb: 2 }}
-    >
-      <Typography variant="h4" sx={{ mb: 2 }}>
-        Desarrollador Web Full Stack
+    <Container sx={{ textAlign: "center", mt: 5, mb: 5 }}>
+      <Typography variant="h4" sx={{ mb: 5 }} color="primary.dark">
+        Proporcionando soluciones web
       </Typography>
-      <Grid container spacing={2} textAlign={"center"} alignItems={"center"}>
-        <Grid size={{ xs: 12, md: 6 }} justifyItems={"center"}>
-          <Box
-            component="img"
-            src="https://assets.bitdegree.org/online-learning-platforms/storage/media/2018/08/what-is-a-web-developer.jpg"
-            alt="Imagen de prueba"
-            width={450}
-          ></Box>
+      <Grid container spacing={4} alignItems={"center"}>
+        <Grid
+          size={{ xs: 12, md: 6, display: "flex", justifyContent: "center" }}
+        >
+          <img
+            src={diploma}
+            alt="Diploma"
+            style={{ maxWidth: "100%", height: "auto" }}
+          />
         </Grid>
-        <Grid size={{ xs: 12, md: 6 }} justifyItems={"center"}>
-          <Typography variant="h5" sx={{ mb: 2 }}>
-            Proporcionando soluciones web
-          </Typography>
-
-          <Typography variant="body1">
+        <Grid size={{ xs: 12, md: 6 }}>
+          <Typography variant="subtitle2" sx={{ textAlign: "justify" }}>
             ¡Saludos! Soy un apasionado desarrollador web full stack con una
             dedicación inquebrantable hacia mi trabajo. Mi misión es convertir
             tus ideas y proyectos en experiencias digitales extraordinarias. Con
@@ -47,6 +44,17 @@ function About() {
             hacia el éxito en línea. ¡Conéctate conmigo y juntos llevaremos tus
             proyectos a nuevas alturas!
           </Typography>
+          <Button
+            variant="contained"
+            color="primary"
+            sx={{ mt: 4 }}
+            href="https://api.whatsapp.com/send?phone=+5493412628575&text=Hola%20Nicolás,%20vengo%20de%20tu%20portfolio%20y%20me%20gustaría"
+            target="_blank"
+            rel="noopener noreferrer"
+            startIcon={<WhatsAppIcon />}
+          >
+            Charla conmigo
+          </Button>
         </Grid>
       </Grid>
     </Container>

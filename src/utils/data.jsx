@@ -7,8 +7,13 @@ import rym from "/App rick y morty captura.png";
 import countries from "/Countries captura.png";
 import toolverse from "/ToolVerse captura.png";
 import splendid from "/Logo Splendid.jpg";
-import creando from "/Creando....png";
-import costura from "/Web Costura.png";
+import lenceria1 from "/Lenceria1.png";
+import lenceria2 from "/Lenceria2.png";
+import lenceria3 from "/Lenceria3.png";
+import lenceria4 from "/Lenceria4.png";
+import lenceria5 from "/Lenceria5.png";
+import lenceria6 from "/Lenceria6.png";
+import lenceria7 from "/Lenceria7.png";
 import imgTextilCatalogo from "/ImgTextilCatalogo.png";
 import imgTextilAbout from "/ImgTextilAbout.png";
 import imgTextilDestacado from "/ImgTextilDestacado.png";
@@ -17,6 +22,7 @@ import imgTextilFooter from "/ImgTextilFooter.png";
 import imgTextilForm from "/ImgTextilForm.png";
 import imgTextilHome from "/ImgTextilHome.png";
 import imgTextilSegmentos from "/ImgTextilSegmentos.png";
+import barberShop from "/BarberShop.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -25,6 +31,13 @@ import resume from "/Resume_NicolasPalma_DevFullStack_ES.pdf";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
+
+export const stackArray = [
+  {
+    name: "",
+    icon: "",
+  },
+];
 
 export const contactArray = [
   {
@@ -134,6 +147,25 @@ export const projectsArray = [
     github: "",
   },
   {
+    images: [
+      lenceria1,
+      lenceria2,
+      lenceria3,
+      lenceria4,
+      lenceria5,
+      lenceria6,
+      lenceria7,
+    ],
+    video: "",
+    title: "Lencería Vale Wey",
+    description:
+      "Landing Page para una diseñadora y fabricante de lencería que desea mostrar sus creaciones, con imágenes en modo catálogo, redes sociales, sección de contacto y botón de WhastsApp",
+    detail:
+      "Hoy en día todos necesitan estar presentes en el mundo digital. Tener visibilidad para mejorar en sus proyectos personales, ofrecer servicios, abrirse al mundo. Es por eso que Valeria confió en mi para el desarrollo de su sitio personal con colores en tonos pastel para destacar la delicadeza y sofisticación de sus diseños.",
+    deploy: "",
+    github: "",
+  },
+  {
     images: [splendid],
     video: "",
     title: "spLENDid - Desarrollo",
@@ -143,20 +175,11 @@ export const projectsArray = [
     deploy: "",
     github: "",
   },
+
   {
-    images: [costura],
+    images: [barberShop],
     video: "",
-    title: "Costura - Desarrollo",
-    description:
-      "Landing Page para una costurera que desea mostrar su trabajo con una descripcion de los mismos, imágenes de alta calidad en modo presentación, redes sociales, sección de contacto y botón de WhastsApp",
-    detail: "",
-    deploy: "",
-    github: "",
-  },
-  {
-    images: [creando],
-    video: "",
-    title: "Peluquería - Desarrollo",
+    title: "Barbería - Desarrollo",
     description:
       "Plataforma para peluquerías, barberías y estetica en general que permite registrarse a un usuario, seleccionar el servicio, reservar un turno y recibir una notificación de recordatorio del mismo.",
     detail: "",

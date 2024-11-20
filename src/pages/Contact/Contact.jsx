@@ -7,6 +7,8 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
 import Box from "@mui/system/Box";
 import SendIcon from "@mui/icons-material/Send";
+import Alert from "@mui/material/Alert";
+import Snackbar from "@mui/material/Snackbar";
 import { useRef, useState } from "react";
 
 const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
@@ -18,6 +20,12 @@ function Contact({ contactArray }) {
   const [message, setMessage] = useState("");
   const [error, setError] = useState({
     error: false,
+    message: "",
+  });
+  const [alert, setAlert] = useState({
+    open: false,
+    severity: "success",
+    variant: "filled",
     message: "",
   });
 
@@ -35,13 +43,18 @@ function Contact({ contactArray }) {
         error: false,
         message: "",
       });
-      console.log("Email correcto.");
     } else {
       setError({
         error: true,
         message: "Formato de email incorrecto.",
       });
-      return alert(error.message);
+      setAlert({
+        open: true,
+        severity: "error",
+        variant: "filled",
+        message: "Formato de email incorrecto.",
+      });
+      return;
     }
     emailjs
       .sendForm(VITE_SERVICE_ID, VITE_TEMPLATE_ID, form.current, {
@@ -49,7 +62,12 @@ function Contact({ contactArray }) {
       })
       .then(
         () => {
-          alert("Mensaje enviado correctamente.");
+          setAlert({
+            open: true,
+            severity: "success",
+            variant: "filled",
+            message: "¡Mensaje enviado con éxito!",
+          });
           setName("");
           setEmail("");
           setSubject("");
@@ -57,8 +75,18 @@ function Contact({ contactArray }) {
         },
         (error) => {
           console.log("FAILED...", error.text);
+          setAlert({
+            open: true,
+            severity: "error",
+            variant: "filled",
+            message: "Error al enviar el mensaje.",
+          });
         }
       );
+  };
+
+  const handleAlertClose = () => {
+    setAlert({ ...alert, open: false });
   };
 
   return (
@@ -152,7 +180,7 @@ function Contact({ contactArray }) {
             <Button
               sx={{ mt: 2 }}
               type="submit"
-              variant="outlined"
+              variant="contained"
               endIcon={<SendIcon />}
             >
               Enviar
@@ -160,6 +188,21 @@ function Contact({ contactArray }) {
           </Box>
         </Grid>
       </Grid>
+
+      <Snackbar
+        open={alert.open}
+        autoHideDuration={6000}
+        onClose={handleAlertClose}
+      >
+        <Alert
+          onClose={handleAlertClose}
+          severity={alert.severity}
+          variant={alert.variant}
+          sx={{ width: "100%" }}
+        >
+          {alert.message}
+        </Alert>
+      </Snackbar>
     </Container>
   );
 }

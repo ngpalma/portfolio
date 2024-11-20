@@ -14,7 +14,7 @@ function App() {
     <div>
       <NavBar navLinksArray={navLinksArray} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home projectsArray={projectsArray} />} />
         <Route path="/about" element={<About />} />
         <Route
           path="/services"

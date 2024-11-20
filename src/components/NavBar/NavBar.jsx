@@ -10,13 +10,14 @@ import { NavListDrawer } from "../index";
 import { useState } from "react";
 import Box from "@mui/system/Box";
 import { NavLink } from "react-router-dom";
+import logo from "/LogoNGdev.svg";
 
 function NavBar({ navLinksArray }) {
   const [open, setOpen] = useState(false);
 
   return (
     <>
-      <AppBar position="static">
+      <AppBar position="sticky">
         <Toolbar>
           <IconButton
             size="large"
@@ -28,6 +29,19 @@ function NavBar({ navLinksArray }) {
           >
             <MenuIcon />
           </IconButton>
+          <Box
+            component="img"
+            src={logo}
+            alt="Logo"
+            sx={{
+              width: 40,
+              height: 40,
+              mr: 1,
+              display: { xs: "none", md: "block" },
+              backgroundColor: "#fff",
+              borderRadius: 3,
+            }}
+          />
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Nicolás Palma
           </Typography>
