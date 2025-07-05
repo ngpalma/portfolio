@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://ngpalma.github.io/portfolio/",
+  "homepage": "https://ngpalma.net.ar",
   "type": "module",
   "scripts": {
     "dev": "vite",
